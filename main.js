@@ -43,3 +43,28 @@ console.log(vengador.toFixed(2));
 var arreglo = [1, 2, 3, 5, 10, 20];
 var aVillanos = ["Duende verde", "Thanos", "Venom"];
 //tuplas
+var heroe = ["Dr. Strange", 100, true];
+//enumeraciones
+var Volumen;
+(function (Volumen) {
+    Volumen[Volumen["min"] = 1] = "min";
+    Volumen[Volumen["medio"] = 5] = "medio";
+    Volumen[Volumen["max"] = 10] = "max";
+})(Volumen || (Volumen = {}));
+var audio = Volumen.medio;
+console.log(audio);
+console.log(Volumen[5]);
+//void-vacio
+function llamar_batman() {
+    console.log("Mostrar la batseñal");
+}
+var mensaje = llamar_batman();
+//never
+function error(mensaje) {
+    throw new Error(mensaje);
+}
+//error("Error crítico");
+//aserciones de tipo
+var cualquier_valor = "Cualquier cosa";
+var largo = cualquier_valor.length;
+console.log(largo);

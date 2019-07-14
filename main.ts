@@ -55,6 +55,41 @@ let arreglo:number[] = [1,2,3,5,10,20];
 let aVillanos:string[] = ["Duende verde", "Thanos", "Venom"];
 
 //tuplas
+let heroe:[string,number,boolean] = ["Dr. Strange", 100, true]; 
+
+//enumeraciones
+enum Volumen{
+    min = 1,
+    medio = 5,
+    max = 10
+}
+
+let audio:number = Volumen.medio;
+console.log(audio);
+console.log(Volumen[5]);
+
+//void-vacio
+function llamar_batman():void{
+    console.log("Mostrar la batseñal");           
+}
+
+let mensaje = llamar_batman();
+
+//never
+function error(mensaje):never{
+
+    throw new Error(mensaje);
+}
+
+//error("Error crítico");
+
+//aserciones de tipo
+let cualquier_valor:any = "Cualquier cosa";
+
+let largo:number = (<string>cualquier_valor).length;
+
+console.log(largo);
+
 
 
 
