@@ -90,6 +90,9 @@ let largo:number = (<string>cualquier_valor).length;
 
 console.log(largo);
 
+//null undefined
+
+
 
 
 
