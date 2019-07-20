@@ -92,6 +92,9 @@ console.log(largo);
 
 //null undefined
 
+let ironman:string;
+ironman = "Tony";
+
 
 
 
