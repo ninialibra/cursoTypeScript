@@ -15,7 +15,7 @@ let flash:Heroe = {
     getNombre(){
         return this.nombre;
     }
-};
+}; 
 
 let superMan: Heroe = {
     nombre: "Clark Kent",
@@ -40,4 +40,17 @@ if(typeof cosa === "number"){
     console.log("Cosa NO es un número");    
 }
 
+//destructuracion de objetos
+let avengers2 = {
+    nick: "Samuel L. Jackson",
+    ironman: "Robert Downey Junior",
+    vision: "Paul Bettany",
+};
+
+let {nick, ironman:warmachine, vision} = avengers2;
+
+console.log(nick);
+//console.log(ironman);
+console.log(vision);
+console.log(warmachine);
 
