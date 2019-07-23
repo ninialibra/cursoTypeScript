@@ -36,3 +36,22 @@ console.log(nick);
 //console.log(ironman);
 console.log(vision);
 console.log(warmachine);
+//destructuracion de arrays
+var avengers3 = ["avenger1", "avenger2", "avenger3"];
+var avenger1 = avengers3[0], avenger3 = avengers3[2];
+console.log(avenger1);
+//console.log(avenger2);
+console.log(avenger3);
+var coche1 = {
+    marca: "Seat",
+    modelo: "León"
+};
+var coche2 = {
+    marca: "Ford",
+    modelo: "Focus"
+};
+var coches = [coche1, coche2];
+for (var _i = 0, coches_1 = coches; _i < coches_1.length; _i++) {
+    var coche = coches_1[_i];
+    console.log(coche.marca, coche.modelo);
+}

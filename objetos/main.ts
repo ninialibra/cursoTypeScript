@@ -54,3 +54,28 @@ console.log(nick);
 console.log(vision);
 console.log(warmachine);
 
+//destructuracion de arrays
+let avengers3 = ["avenger1", "avenger2", "avenger3"];
+let [avenger1, , avenger3] = avengers3
+
+console.log(avenger1);
+//console.log(avenger2);
+console.log(avenger3);
+
+let coche1 = {
+    marca: "Seat",
+    modelo: "León"
+};
+
+let coche2 = {
+    marca: "Ford",
+    modelo: "Focus"
+};
+
+let coches = [coche1, coche2];
+
+for (let coche of coches){
+    console.log(coche.marca, coche.modelo);    
+}
+
+
