@@ -1,3 +1,4 @@
+"use strict";
 class Avenger2 {
     constructor(nombre, poder, nombreReal) {
         this.nombre = nombre;
